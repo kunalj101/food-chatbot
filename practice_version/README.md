@@ -1,6 +1,6 @@
 # food-chatbot
 
-This is the **Complete Version** of the Chatbot and can be directly used with slack by filling **slack_credentials.yml** and **Zomato API's** key in the **actions.py** files.
+This is the **Practice Version** of the Chatbot which means that you will find much of the code is missing and you will have to write it yourself.
 
 ## Setup and installation
 
