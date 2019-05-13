@@ -36,7 +36,7 @@ pipeline: spacy_sklearn
 
 ## How to run locally
 
-**Note**: If running on Windows, you will either have to [install make](http://gnuwin32.sourceforge.net/packages/make.htm) or copy the following commands from the [Makefile](https://github.com/RasaHQ/starter-pack-rasa-stack/blob/master/Makefile)
+**Note**: If running on Windows, you will either have to [install make](http://gnuwin32.sourceforge.net/packages/make.htm) or copy the following commands from the [Makefile](https://github.com/mohdsanadzakirizvi/food-chatbot/blob/master/complete_version/Makefile)
 
 1. You can train the Rasa NLU model by running:  
 ```make train-nlu```  
