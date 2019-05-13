@@ -79,15 +79,19 @@ class ActionRestaurantSearch(Action):
 			restaurants = self.parse_search(res.json()['restaurants'])
 			out_greet_msg = '*Here are top 5 results for {} in {}*'.format(cuisine, location)
 			dispatcher.utter_message(out_greet_msg)
+			print(len(restaurants))
+			# prepare the output to be sent out
+			if len(restaurants) > 0:
+				output = []
+				for idx, rest in enumerate(restaurants):
+					out_st = 'Restaurant: '+restaurants['name'][idx]+'\nCuisines: '+restaurants['cuisines'][idx]+'\nAddress: '+restaurants['address'][idx]+'\nRating: '+restaurants['rating'][idx]+'\nAverage cost for two: '+restaurants['cost'][idx]+'\n'
+					output.append(out_st)
+					dispatcher.utter_message(out_st)
+
+				output = '\n'.join(output)
+			else:
+				dispatcher.utter_message('No Restaurant found :( Please try again!')
 		else:
 			dispatcher.utter_message('FAILED.')
-
-		output = []
-		for idx, rest in enumerate(restaurants):
-			out_st = 'Restaurant: '+restaurants['name'][idx]+'\nCuisines: '+restaurants['cuisines'][idx]+'\nAddress: '+restaurants['address'][idx]+'\nRating: '+restaurants['rating'][idx]+'\nAverage cost for two: '+restaurants['cost'][idx]+'\n'
-			output.append(out_st)
-			dispatcher.utter_message(out_st)
-
-		output = '\n'.join(output)
 		# dispatcher.utter_message(output)
 		return []

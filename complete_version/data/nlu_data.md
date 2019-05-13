@@ -87,12 +87,12 @@
 - I need food
 - Food near [delhi](location)
 - Food near me
-- what are some good restraunts in [delhi](location)
+- what are some good restraunts in [paris](location)
 - suggest me some good [chinese](cuisine) place
 - suggest me a good place to eat
 - where can i get best [mughlai](cuisine)
-- where can I find best [burger](cuisine) in [delhi](location)?
-- best [biryani](cuisine) in [chennai](location)
+- where can I find best [burger](cuisine) in [tokyo](location)?
+- best [biryani](cuisine) in [new york](location)?
 - i want to eat [pasta](cuisine)
 - best [burgers](cuisine) in [delhi](location)
 - what are the best [pizza](cuisine) in [delhi](location)
